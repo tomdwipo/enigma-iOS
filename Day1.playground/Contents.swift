@@ -128,3 +128,53 @@ let tuple77 = (key: ["keY" : 21], vale:7)
 
 
 print(tuple77.key["keY"] ?? "kosong")
+
+
+"""
+{
+"json" : "46",
+"test": 65
+"""
+
+//value type
+struct Model {
+    let json: String
+    let test: Int
+}
+
+struct B {
+    var b: Int
+    init(b: Int) {
+        self.b = b
+    }
+}
+
+//value reference type
+class A {
+    var a: Int
+    init(a: Int){
+        self.a = a
+    }
+}
+
+var a = A(a: 6)
+
+var b = a
+
+b.a = 9
+
+print(a.a)
+print(b.a)
+
+var c = B(b: 6)
+
+var d = c
+
+d.b = 9
+
+print(d.b)
+print(c.b)
+
+
+
+
