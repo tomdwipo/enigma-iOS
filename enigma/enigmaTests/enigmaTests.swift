@@ -9,12 +9,12 @@ import XCTest
 @testable import enigma
 
 class enigmaTests: XCTestCase {
-    private var vc: ViewController!
+    private var vc: HomeViewController!
     
     override func setUp() {
         super.setUp()
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        vc = sb.instantiateViewController(withIdentifier: String(describing: ViewController.self)) as? ViewController
+        vc = sb.instantiateViewController(withIdentifier: String(describing: HomeViewController.self)) as? HomeViewController
         vc.loadViewIfNeeded()
     }
     

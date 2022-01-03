@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     @IBOutlet private(set) var tableView: UITableView!
  
     override func viewDidLoad() {
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
