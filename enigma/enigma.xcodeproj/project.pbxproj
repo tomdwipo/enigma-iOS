@@ -16,6 +16,8 @@
 		AAD7A5DD27832D22005913A6 /* enigmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7A5DC27832D22005913A6 /* enigmaTests.swift */; };
 		AAD7A5FE27834BFE005913A6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7A5FC27834BFE005913A6 /* TableViewCell.swift */; };
 		AAD7A5FF27834BFE005913A6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD7A5FD27834BFE005913A6 /* TableViewCell.xib */; };
+		AAD7A60327835677005913A6 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7A60127835677005913A6 /* TestViewController.swift */; };
+		AAD7A60427835677005913A6 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD7A60227835677005913A6 /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		AAD7A5DC27832D22005913A6 /* enigmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enigmaTests.swift; sourceTree = "<group>"; };
 		AAD7A5FC27834BFE005913A6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		AAD7A5FD27834BFE005913A6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		AAD7A60127835677005913A6 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		AAD7A60227835677005913A6 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 				AAD7A5D027832D22005913A6 /* LaunchScreen.storyboard */,
 				AAD7A5FC27834BFE005913A6 /* TableViewCell.swift */,
 				AAD7A5FD27834BFE005913A6 /* TableViewCell.xib */,
+				AAD7A60127835677005913A6 /* TestViewController.swift */,
+				AAD7A60227835677005913A6 /* TestViewController.xib */,
 			);
 			path = enigma;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD7A5D227832D22005913A6 /* LaunchScreen.storyboard in Resources */,
+				AAD7A60427835677005913A6 /* TestViewController.xib in Resources */,
 				AAD7A5FF27834BFE005913A6 /* TableViewCell.xib in Resources */,
 				AAD7A5CF27832D22005913A6 /* Assets.xcassets in Resources */,
 				AAD7A5CD27832D1F005913A6 /* Main.storyboard in Resources */,
@@ -213,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD7A60327835677005913A6 /* TestViewController.swift in Sources */,
 				AAD7A5CA27832D1F005913A6 /* ViewController.swift in Sources */,
 				AAD7A5FE27834BFE005913A6 /* TableViewCell.swift in Sources */,
 				AAD7A5C627832D1F005913A6 /* AppDelegate.swift in Sources */,

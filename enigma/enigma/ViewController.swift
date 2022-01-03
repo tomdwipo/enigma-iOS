@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: String(describing: TableViewCell.self), bundle: Bundle(for: TableViewCell.self)), forCellReuseIdentifier: String(describing: TableViewCell.self))
+        tableView.rowHeight = 44
         // Do any additional setup after loading the view.
     }
 
@@ -28,6 +29,5 @@ extension ViewController: UITableViewDataSource {
         cell.contentLabel.text = "Testing"
         return cell
     }
-    
-    
 }
+
