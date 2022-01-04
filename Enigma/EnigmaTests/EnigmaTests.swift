@@ -34,7 +34,7 @@ class EnigmaTests: XCTestCase {
     }
     
     func test_tableview_didselectRowAt_checkValue(){
-        let cell = vc.tableView.delegate?.tableView?(vc.tableView, didSelectRowAt: IndexPath(row: 0, section: 0)) 
+        let cell: Void? = vc.tableView.delegate?.tableView?(vc.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
         XCTAssertNotNil(cell)
     }
     
