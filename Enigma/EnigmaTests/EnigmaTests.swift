@@ -9,28 +9,33 @@ import XCTest
 @testable import Enigma
 
 class EnigmaTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private var vc: HomeContainerViewController!
+    
+    override func setUp() {
+        super.setUp()
+        let sb = UIStoryboard(name: "Home", bundle: nil)
+        vc = sb.instantiateViewController(withIdentifier: "HomeContainerViewController") as? HomeContainerViewController
+        vc.loadViewIfNeeded()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override  func tearDown() {
+        vc = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func test_outlets_shouldBeConnected(){
+        XCTAssertNotNil(vc.tableView.dataSource)
+        XCTAssertNotNil(vc.tableView.delegate)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_tableview_cellForRowAt_checkValue(){
+        let cell = vc.tableView.dataSource?.tableView(vc.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as! HomeViewCell
+        XCTAssertEqual(cell.titleContent.text, "oke")
     }
-
+    
+    func test_tableview_didselectRowAt_checkValue(){
+        let cell = vc.tableView.delegate?.tableView?(vc.tableView, didSelectRowAt: IndexPath(row: 0, section: 0)) 
+        XCTAssertNotNil(cell)
+    }
+    
 }
