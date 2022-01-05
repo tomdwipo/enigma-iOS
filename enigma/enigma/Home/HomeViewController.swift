@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: String(describing: TableViewCell.self), bundle: Bundle(for: TableViewCell.self)), forCellReuseIdentifier: String(describing: TableViewCell.self))
-        tableView.rowHeight = 44
+//        tableView.rowHeight = UITableView.automaticDimension
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
