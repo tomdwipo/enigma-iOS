@@ -7,7 +7,8 @@
 
 import UIKit
 
-class HostViewController: UIViewController {
+class HostViewController: UIViewController  {
+   
 
     static func HostView(caller: UIViewController) {
         let vc = HostViewController()
@@ -16,11 +17,10 @@ class HostViewController: UIViewController {
         vc.didMove(toParent: caller)
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("oje")
-        // Do any additional setup after loading the view.
+       // Do any additional setup after loading the view.
     }
-
 
 }

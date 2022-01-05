@@ -17,8 +17,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfb-86-mOQ">
-                        <rect key="frame" x="24" y="12" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfb-86-mOQ">
+                        <rect key="frame" x="24" y="12" width="184" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -40,12 +40,13 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="ti0-5k-g3d" secondAttribute="bottom" constant="12" id="2V7-q6-Js5"/>
                     <constraint firstItem="nfb-86-mOQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="5AP-iL-OD1"/>
-                    <constraint firstItem="rPb-fV-J2z" firstAttribute="top" secondItem="nfb-86-mOQ" secondAttribute="bottom" constant="8" id="G59-Qy-bWK"/>
                     <constraint firstItem="rPb-fV-J2z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="XLt-rP-wnC"/>
                     <constraint firstItem="ti0-5k-g3d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="YAr-oB-muo"/>
                     <constraint firstItem="nfb-86-mOQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="aR0-gL-JdE"/>
                     <constraint firstAttribute="bottom" secondItem="rPb-fV-J2z" secondAttribute="bottom" constant="24" id="f3V-eg-0XU"/>
+                    <constraint firstItem="ti0-5k-g3d" firstAttribute="leading" secondItem="nfb-86-mOQ" secondAttribute="trailing" constant="20" id="mmC-Qj-bjc"/>
                     <constraint firstAttribute="trailing" secondItem="ti0-5k-g3d" secondAttribute="trailing" constant="12" id="r3Z-yS-vv1"/>
+                    <constraint firstItem="rPb-fV-J2z" firstAttribute="top" secondItem="nfb-86-mOQ" secondAttribute="bottom" constant="8.5" id="rvG-lU-R3Q"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
