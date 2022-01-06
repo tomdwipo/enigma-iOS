@@ -15,6 +15,8 @@ class HomeViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.titleContent.textColor = .brown
+       
     }
     
+   
 }

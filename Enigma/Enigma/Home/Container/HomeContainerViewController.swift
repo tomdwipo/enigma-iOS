@@ -47,10 +47,18 @@ extension HomeContainerViewController: UITableViewDataSource {
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier:  String(describing: HomeViewCell.self), for: indexPath) as! HomeViewCell
             cell.titleContent.text = titles[indexPath.row]
+            let tap = UIGestureRecognizer(target: self, action: #selector(imageTap(_:)))
+            cell.imageContent.addGestureRecognizer(tap)
+            cell.imageContent.isUserInteractionEnabled = true
             return cell
         }
      
     }
+    
+    @objc func imageTap(_ sender: UITapGestureRecognizer){
+        print("test")
+    }
+    
     
 }
 
@@ -62,12 +70,15 @@ extension HomeContainerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: HeaderTableView.self)) as! HeaderTableView
+       
         return view
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 90
     }
+    
+ 
 //
 //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 //        return "News For you"
@@ -79,9 +90,9 @@ extension HomeContainerViewController: UITableViewDelegate {
 //    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(titles[indexPath.row])
-        let vc = HostViewController()
-        present(vc, animated: true, completion: nil)
+//        print(titles[indexPath.row])
+//        let vc = HostViewController()
+//        present(vc, animated: true, completion: nil)
         
     }
 }

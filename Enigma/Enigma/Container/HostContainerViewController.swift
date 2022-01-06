@@ -42,7 +42,7 @@ extension HostContainerViewController: UICollectionViewDelegateFlowLayout , UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        navigationController?.pushViewController(HostViewController(), animated: true)
+//        navigationController?.pushViewController(HostViewController(), animated: true)
     }
     
 }
