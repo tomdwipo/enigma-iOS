@@ -47,16 +47,11 @@ extension HomeContainerViewController: UITableViewDataSource {
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier:  String(describing: HomeViewCell.self), for: indexPath) as! HomeViewCell
             cell.titleContent.text = titles[indexPath.row]
-            let tap = UIGestureRecognizer(target: self, action: #selector(imageTap(_:)))
-            cell.imageContent.addGestureRecognizer(tap)
             cell.imageContent.isUserInteractionEnabled = true
+
             return cell
         }
      
-    }
-    
-    @objc func imageTap(_ sender: UITapGestureRecognizer){
-        print("test")
     }
     
     

@@ -10,12 +10,11 @@ import UIKit
 
 extension UIViewController {
     func navigateToHome(_ caller: UIViewController){
-        
-        print("navigation:")
-        
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc = sb.instantiateInitialViewController()
-        caller.present(vc!, animated: true)
+        let vc = sb.instantiateInitialViewController()!
+        caller.addChild(vc)
+        caller.view.addSubview(vc.view)
+        vc.didMove(toParent: caller)
     }
 }
 

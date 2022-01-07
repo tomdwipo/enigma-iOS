@@ -18,5 +18,6 @@ class HomeViewCell: UITableViewCell {
        
     }
     
-   
+  
+    
 }

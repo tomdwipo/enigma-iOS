@@ -8,22 +8,17 @@
 import UIKit
 
 class HostContainerViewController: UIViewController {
-    @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        
-        collectionView.register(UINib(nibName: String(describing: HostViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: HostViewCell.self))
+        HostViewController.HostView(caller: self)
        
     }
 
 }
 
 
-extension HostContainerViewController: UICollectionViewDataSource {
+extension HostViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 530
     }
@@ -36,7 +31,7 @@ extension HostContainerViewController: UICollectionViewDataSource {
    
 }
 
-extension HostContainerViewController: UICollectionViewDelegateFlowLayout , UICollectionViewDelegate{
+extension HostViewController: UICollectionViewDelegateFlowLayout , UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         return CGSize(width: 82 , height: 82)
     }

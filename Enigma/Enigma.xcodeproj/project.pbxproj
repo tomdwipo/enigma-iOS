@@ -13,6 +13,10 @@
 		AA8497DB2787120400BA8A7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8497D92787120400BA8A7F /* LoginViewController.swift */; };
 		AA8497DC2787120400BA8A7F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8497DA2787120400BA8A7F /* LoginViewController.xib */; };
 		AA8497DF27871B6100BA8A7F /* Navigation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8497DE27871B6100BA8A7F /* Navigation+Extension.swift */; };
+		AA8497E327883A8700BA8A7F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8497E127883A8700BA8A7F /* CollectionViewCell.swift */; };
+		AA8497E427883A8700BA8A7F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8497E227883A8700BA8A7F /* CollectionViewCell.xib */; };
+		AA8497E827883CC200BA8A7F /* SaveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8497E627883CC200BA8A7F /* SaveCollectionViewCell.swift */; };
+		AA8497E927883CC200BA8A7F /* SaveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8497E727883CC200BA8A7F /* SaveCollectionViewCell.xib */; };
 		AAD552C82784629400F30A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD552C72784629400F30A7F /* AppDelegate.swift */; };
 		AAD552CA2784629400F30A7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD552C92784629400F30A7F /* SceneDelegate.swift */; };
 		AAD552CC2784629400F30A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD552CB2784629400F30A7F /* ViewController.swift */; };
@@ -59,6 +63,10 @@
 		AA8497D92787120400BA8A7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA8497DA2787120400BA8A7F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AA8497DE27871B6100BA8A7F /* Navigation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation+Extension.swift"; sourceTree = "<group>"; };
+		AA8497E127883A8700BA8A7F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AA8497E227883A8700BA8A7F /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		AA8497E627883CC200BA8A7F /* SaveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCollectionViewCell.swift; sourceTree = "<group>"; };
+		AA8497E727883CC200BA8A7F /* SaveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveCollectionViewCell.xib; sourceTree = "<group>"; };
 		AAD552C42784629400F30A7F /* Enigma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enigma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD552C72784629400F30A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD552C92784629400F30A7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +152,24 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		AA8497E027883A6700BA8A7F /* CollectionBase */ = {
+			isa = PBXGroup;
+			children = (
+				AA8497E127883A8700BA8A7F /* CollectionViewCell.swift */,
+				AA8497E227883A8700BA8A7F /* CollectionViewCell.xib */,
+			);
+			path = CollectionBase;
+			sourceTree = "<group>";
+		};
+		AA8497E527883CA500BA8A7F /* SaveCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA8497E627883CC200BA8A7F /* SaveCollectionViewCell.swift */,
+				AA8497E727883CC200BA8A7F /* SaveCollectionViewCell.xib */,
+			);
+			path = SaveCollectionCell;
+			sourceTree = "<group>";
+		};
 		AAD552BB2784629400F30A7F = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +201,6 @@
 				AAD5530B2784794E00F30A7F /* Save */,
 				AAD553042784774200F30A7F /* Host */,
 				AAD553012784763500F30A7F /* Home */,
-				AAD552F727846A7F00F30A7F /* Container */,
 				AAD552CB2784629400F30A7F /* ViewController.swift */,
 				AAD552D02784629500F30A7F /* Assets.xcassets */,
 				AAD552D22784629500F30A7F /* LaunchScreen.storyboard */,
@@ -189,15 +214,6 @@
 				AAD552DE2784629500F30A7F /* EnigmaTests.swift */,
 			);
 			path = EnigmaTests;
-			sourceTree = "<group>";
-		};
-		AAD552F727846A7F00F30A7F /* Container */ = {
-			isa = PBXGroup;
-			children = (
-				AAD552FF278475CC00F30A7F /* HostContainerViewController.swift */,
-				AAD553092784793100F30A7F /* SaveContainerViewController.swift */,
-			);
-			path = Container;
 			sourceTree = "<group>";
 		};
 		AAD552FA27846CF800F30A7F /* Home */ = {
@@ -226,6 +242,7 @@
 				AAD5531D2785C0DB00F30A7F /* Xib */,
 				AAD553052784775C00F30A7F /* HostViewController.swift */,
 				AAD553062784775C00F30A7F /* HostViewController.xib */,
+				AAD552FF278475CC00F30A7F /* HostContainerViewController.swift */,
 			);
 			path = Host;
 			sourceTree = "<group>";
@@ -233,8 +250,11 @@
 		AAD5530B2784794E00F30A7F /* Save */ = {
 			isa = PBXGroup;
 			children = (
+				AA8497E527883CA500BA8A7F /* SaveCollectionCell */,
+				AA8497E027883A6700BA8A7F /* CollectionBase */,
 				AAD5530C2784795E00F30A7F /* SaveViewController.swift */,
 				AAD5530D2784795E00F30A7F /* SaveViewController.xib */,
+				AAD553092784793100F30A7F /* SaveContainerViewController.swift */,
 			);
 			path = Save;
 			sourceTree = "<group>";
@@ -390,6 +410,7 @@
 			files = (
 				AAD5530F2784795E00F30A7F /* SaveViewController.xib in Resources */,
 				AAD553162785BCCF00F30A7F /* NewsViewCell.xib in Resources */,
+				AA8497E427883A8700BA8A7F /* CollectionViewCell.xib in Resources */,
 				AA8497DC2787120400BA8A7F /* LoginViewController.xib in Resources */,
 				AAD552D42784629500F30A7F /* LaunchScreen.storyboard in Resources */,
 				AAD553032784764100F30A7F /* Home.storyboard in Resources */,
@@ -397,6 +418,7 @@
 				AAD552FE27846D2100F30A7F /* HomeViewCell.xib in Resources */,
 				AAD552D12784629500F30A7F /* Assets.xcassets in Resources */,
 				AAD553082784775C00F30A7F /* HostViewController.xib in Resources */,
+				AA8497E927883CC200BA8A7F /* SaveCollectionViewCell.xib in Resources */,
 				AAD5531C2785BEAF00F30A7F /* HeaderTableView.xib in Resources */,
 				AAD552CF2784629400F30A7F /* Main.storyboard in Resources */,
 			);
@@ -482,10 +504,12 @@
 			files = (
 				AA8497D7278711AF00BA8A7F /* CardView.swift in Sources */,
 				AAD55300278475CC00F30A7F /* HostContainerViewController.swift in Sources */,
+				AA8497E327883A8700BA8A7F /* CollectionViewCell.swift in Sources */,
 				AAD552CC2784629400F30A7F /* ViewController.swift in Sources */,
 				AA8497DB2787120400BA8A7F /* LoginViewController.swift in Sources */,
 				AAD553202785C0FE00F30A7F /* HostViewCell.swift in Sources */,
 				AAD553072784775C00F30A7F /* HostViewController.swift in Sources */,
+				AA8497E827883CC200BA8A7F /* SaveCollectionViewCell.swift in Sources */,
 				AAD552F927846AAB00F30A7F /* HomeContainerViewController.swift in Sources */,
 				AAD5530E2784795E00F30A7F /* SaveViewController.swift in Sources */,
 				AAD552FD27846D2100F30A7F /* HomeViewCell.swift in Sources */,
