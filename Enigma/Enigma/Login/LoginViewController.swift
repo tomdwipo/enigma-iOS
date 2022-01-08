@@ -15,20 +15,33 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
    
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameTextField.delegate = self
         passwordTextField.delegate = self
-       
-     
+        
         
         let url = URL(string: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg")
+//        icon.image = UIImage(named: "Vector")
         icon.kf.setImage(with: url)
         
-        
-        
+    }
+    
+    deinit {
         
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
 
     @IBAction func loginTapped(_ sender: Any) {
         view.endEditing(true)

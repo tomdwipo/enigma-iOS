@@ -15,7 +15,19 @@ extension UIViewController {
         
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateInitialViewController()
+        vc?.modalPresentationStyle = .overCurrentContext
         caller.present(vc!, animated: true)
+        
+        
+        //Present
+      //  caller.dismiss(animated: <#T##Bool#>, completion: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>)
+        
+        
+       // caller.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+        
+        
+        //navigation
+       // caller.navigationController?.popViewController(animated: <#T##Bool#>)
     }
 }
 
