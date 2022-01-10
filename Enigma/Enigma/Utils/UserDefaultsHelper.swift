@@ -13,7 +13,7 @@ enum UserDefaultsKey: String {
 }
 
 
-class UserDefaultsHelper {
+struct UserDefaultsHelper {
     
     
     static func save<T>(value:T , key:UserDefaultsKey){
@@ -34,9 +34,9 @@ class UserDefaultsHelper {
         return nil
     }
     
-    static func get<T: Decodable>(key: UserDefaultsKey)-> T? {
+    static func get<T: Decodable>( type: T.Type, key: UserDefaultsKey)-> T? {
         if let data = UserDefaults.standard.value(forKey: key.rawValue) as? Data {
-            let obj = try? PropertyListDecoder().decode(T.self, from: data)
+            let obj = try? PropertyListDecoder().decode(type, from: data)
             return obj
         }
         return nil

@@ -64,8 +64,8 @@ class LoginViewController: UIViewController {
             model.isMessage = "Oke"
             UserDefaultsHelper.save(dataModel: model, key: UserDefaultsKey.isLoginModel)
             
-            let modelResult: LoginModel? = UserDefaultsHelper.get(key: UserDefaultsKey.isLoginModel)
-            print(modelResult.debugDescription)
+            let modelResult = UserDefaultsHelper.get(type: LoginModel.self, key: UserDefaultsKey.isLoginModel)
+            print(modelResult?.isMessage)
 
             
             
