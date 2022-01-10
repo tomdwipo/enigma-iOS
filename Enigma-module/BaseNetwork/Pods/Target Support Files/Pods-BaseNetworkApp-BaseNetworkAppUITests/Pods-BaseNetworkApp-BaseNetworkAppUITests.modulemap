@@ -1,0 +1,6 @@
+framework module Pods_BaseNetworkApp_BaseNetworkAppUITests {
+  umbrella header "Pods-BaseNetworkApp-BaseNetworkAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

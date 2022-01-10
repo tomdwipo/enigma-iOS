@@ -15,6 +15,8 @@
 		AA42BD2327886517003056A2 /* TrendingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD2127886517003056A2 /* TrendingCollectionViewCell.swift */; };
 		AA42BD2427886517003056A2 /* TrendingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA42BD2227886517003056A2 /* TrendingCollectionViewCell.xib */; };
 		AA42BD2727886C1B003056A2 /* Host.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA42BD2627886C1B003056A2 /* Host.storyboard */; };
+		AA42BD2B278C5398003056A2 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD2A278C5398003056A2 /* UserDefaultsHelper.swift */; };
+		AA42BD2E278C570C003056A2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD2D278C570C003056A2 /* Login.swift */; };
 		AA8497D527870DE800BA8A7F /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8497D427870DE800BA8A7F /* RoundedImageView.swift */; };
 		AA8497D7278711AF00BA8A7F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8497D6278711AF00BA8A7F /* CardView.swift */; };
 		AA8497DB2787120400BA8A7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8497D92787120400BA8A7F /* LoginViewController.swift */; };
@@ -68,6 +70,8 @@
 		AA42BD2127886517003056A2 /* TrendingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA42BD2227886517003056A2 /* TrendingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingCollectionViewCell.xib; sourceTree = "<group>"; };
 		AA42BD2627886C1B003056A2 /* Host.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Host.storyboard; sourceTree = "<group>"; };
+		AA42BD2A278C5398003056A2 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		AA42BD2D278C570C003056A2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		AA8497D427870DE800BA8A7F /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		AA8497D6278711AF00BA8A7F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AA8497D92787120400BA8A7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +180,22 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
+		AA42BD29278C52F9003056A2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AA42BD2A278C5398003056A2 /* UserDefaultsHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		AA42BD2C278C5701003056A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA42BD2D278C570C003056A2 /* Login.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AA8497D327870D9800BA8A7F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +245,8 @@
 		AAD552C62784629400F30A7F /* Enigma */ = {
 			isa = PBXGroup;
 			children = (
+				AA42BD2C278C5701003056A2 /* Model */,
+				AA42BD29278C52F9003056A2 /* Helper */,
 				AA8497DD27871B4A00BA8A7F /* Extension */,
 				AA8497D8278711F000BA8A7F /* Login */,
 				AA8497D327870D9800BA8A7F /* View */,
@@ -537,6 +559,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA42BD2E278C570C003056A2 /* Login.swift in Sources */,
 				AA8497D7278711AF00BA8A7F /* CardView.swift in Sources */,
 				AAD55300278475CC00F30A7F /* HostContainerViewController.swift in Sources */,
 				AAD552CC2784629400F30A7F /* ViewController.swift in Sources */,
@@ -547,6 +570,7 @@
 				AA42BD2327886517003056A2 /* TrendingCollectionViewCell.swift in Sources */,
 				AA42BD1927886087003056A2 /* BaseCollectionViewCell.swift in Sources */,
 				AA42BD1E27886283003056A2 /* ContentCollectionViewCell.swift in Sources */,
+				AA42BD2B278C5398003056A2 /* UserDefaultsHelper.swift in Sources */,
 				AAD5530E2784795E00F30A7F /* SaveViewController.swift in Sources */,
 				AAD552FD27846D2100F30A7F /* HomeViewCell.swift in Sources */,
 				AAD552C82784629400F30A7F /* AppDelegate.swift in Sources */,

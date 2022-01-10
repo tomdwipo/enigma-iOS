@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import BaseNetwork
 
 class LoginViewController: UIViewController {
 
@@ -24,7 +25,11 @@ class LoginViewController: UIViewController {
         
         let url = URL(string: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg")
 //        icon.image = UIImage(named: "Vector")
-        icon.kf.setImage(with: url)
+//         icon.kf.setImage(with: url)
+        icon.image = UIImage(named: "Vectors", in: BundleNetwork.bundle(), compatibleWith: nil)
+        
+        print(Testing())
+        
         
     }
     
@@ -51,8 +56,31 @@ class LoginViewController: UIViewController {
         if validate.isValid {
             print("\(validate.message)")
             navigateToHome(self)
+           
+            
+            
+            
+            
         }else{
             showAlert(message: validate.message)
+            
+            UserDefaultsHelper.save(value: 543, key: .isLogin)
+            
+            
+            let data = UserDefaultsHelper.get(type: Double.self, key: .isLogin)
+            print("\(UserDefaultsKey.isLogin.rawValue)")
+            
+            
+            var model = LoginModel()
+            model.isLogin = false
+            model.message = "not oke"
+            
+            UserDefaultsHelper.save(dataModel: model, key: UserDefaultsKey.isLoginModel)
+            
+            let dataModel = UserDefaultsHelper.get(typeModel: LoginModel.self, key: UserDefaultsKey.isLoginModel)
+            
+            print("dataModel \(dataModel?.message) \(dataModel?.isLogin)")
+            
         }
     }
     

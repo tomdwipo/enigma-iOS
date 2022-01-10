@@ -7,7 +7,8 @@ target 'Enigma' do
   use_frameworks!
   pod 'Kingfisher', '~> 7.0'
   pod 'IQKeyboardManagerSwift'
-
+  
+ pod 'BaseNetwork', :path => '../Enigma-module'
   # Pods for Enigma
 
   target 'EnigmaTests' do
