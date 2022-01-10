@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import SwiftUI
 
 class LoginViewController: UIViewController {
 
@@ -52,6 +53,23 @@ class LoginViewController: UIViewController {
             print("\(validate.message)")
             navigateToHome(self)
         }else{
+          
+            
+            UserDefaultsHelper.save(value: false, key: UserDefaultsKey.isLogin)
+            print(UserDefaultsHelper.get(for: Bool.self, key: UserDefaultsKey.isLogin))
+           
+            
+            let model = LoginModel()
+            model.isLogin = true
+            model.isMessage = "Oke"
+            UserDefaultsHelper.save(dataModel: model, key: UserDefaultsKey.isLoginModel)
+            
+            let modelResult: LoginModel? = UserDefaultsHelper.get(key: UserDefaultsKey.isLoginModel)
+            print(modelResult.debugDescription)
+
+            
+            
+            
             showAlert(message: validate.message)
         }
     }
