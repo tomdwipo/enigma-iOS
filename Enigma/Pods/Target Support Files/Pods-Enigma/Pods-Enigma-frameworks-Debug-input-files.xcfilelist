@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Enigma/Pods-Enigma-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BaseNetwork/BaseNetwork.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework

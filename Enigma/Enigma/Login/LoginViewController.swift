@@ -8,6 +8,7 @@
 import UIKit
 import Kingfisher
 import SwiftUI
+import BaseNetwork
 
 class LoginViewController: UIViewController {
 
@@ -22,10 +23,13 @@ class LoginViewController: UIViewController {
         usernameTextField.delegate = self
         passwordTextField.delegate = self
         
+        print(Testing.Testing())
         
         let url = URL(string: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg")
 //        icon.image = UIImage(named: "Vector")
-        icon.kf.setImage(with: url)
+//        icon.kf.setImage(with: url)
+  
+        icon.image = UIImage(named: "Oval", in: bundle(), with: nil)
         
     }
     

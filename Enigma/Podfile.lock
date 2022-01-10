@@ -1,20 +1,27 @@
 PODS:
-  - IQKeyboardManagerSwift (6.5.9)
-  - Kingfisher (7.1.2)
+  - BaseNetwork (0.0.1)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Kingfisher (7.0.0)
 
 DEPENDENCIES:
+  - BaseNetwork (from `../Enigma-module`)
   - IQKeyboardManagerSwift
   - Kingfisher (~> 7.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - IQKeyboardManagerSwift
     - Kingfisher
 
-SPEC CHECKSUMS:
-  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
-  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+EXTERNAL SOURCES:
+  BaseNetwork:
+    :path: "../Enigma-module"
 
-PODFILE CHECKSUM: 93f9758b7642cffd5c528f97383f42d684e00257
+SPEC CHECKSUMS:
+  BaseNetwork: 4f92d66f0a6496cb5e2b2c9b02c0f05a0231341c
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Kingfisher: 5efc54fec3980f92354898532e562cc17f31efb4
+
+PODFILE CHECKSUM: c8b54b4b422fda0a0ad7bfe83a735e6e76c9e288
 
 COCOAPODS: 1.11.2
