@@ -326,7 +326,7 @@
 				AA42BD3F278C5863003056A2 /* Sources */,
 				AA42BD40278C5863003056A2 /* Frameworks */,
 				AA42BD41278C5863003056A2 /* Resources */,
-				D20928B1E98189591BC2164E /* [CP] Embed Pods Frameworks */,
+				29DB566DDFD41968F60CE16A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,7 +346,6 @@
 				AA42BD60278C647C003056A2 /* Sources */,
 				AA42BD61278C647C003056A2 /* Frameworks */,
 				AA42BD62278C647C003056A2 /* Resources */,
-				C946A9652A2208B4020FD59D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,7 +383,6 @@
 				AA42BD7F278C647D003056A2 /* Sources */,
 				AA42BD80278C647D003056A2 /* Frameworks */,
 				AA42BD81278C647D003056A2 /* Resources */,
-				F1A7C77E71E19EA3456664B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -513,6 +511,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		29DB566DDFD41968F60CE16A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		37158100689E43A25D35B6F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -599,57 +614,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C946A9652A2208B4020FD59D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaseNetworkApp/Pods-BaseNetworkApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaseNetworkApp/Pods-BaseNetworkApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseNetworkApp/Pods-BaseNetworkApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D20928B1E98189591BC2164E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1A7C77E71E19EA3456664B3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaseNetworkApp-BaseNetworkAppUITests/Pods-BaseNetworkApp-BaseNetworkAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaseNetworkApp-BaseNetworkAppUITests/Pods-BaseNetworkApp-BaseNetworkAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseNetworkApp-BaseNetworkAppUITests/Pods-BaseNetworkApp-BaseNetworkAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
