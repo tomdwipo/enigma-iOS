@@ -10,9 +10,15 @@ import BaseNetwork
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var roleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(Testing())
+        let test = Testing()
+        
+        test.search(resultResponse: { role in
+            print("oke role \(role)")
+            self.roleLabel.text = "role \(role)"
+        })
         // Do any additional setup after loading the view.
     }
 

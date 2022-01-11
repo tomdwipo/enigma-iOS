@@ -1,16 +1,31 @@
 PODS:
-  - BaseNetwork (0.0.1)
+  - Alamofire (5.4.4)
+  - BaseNetwork (0.0.1):
+    - Alamofire (~> 5.4.4)
+    - Moya (~> 15.0.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
 
 DEPENDENCIES:
   - BaseNetwork (from `../`)
+  - Moya (~> 15.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
 
 EXTERNAL SOURCES:
   BaseNetwork:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BaseNetwork: b89e52f7400319896ee919c3458f084de0fc9746
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  BaseNetwork: 1b12d2e010f83a1ffe63969db39610746f9bcc8a
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
 
-PODFILE CHECKSUM: 3aee3d76a46e1f44e3a0be7b365ac6c133d238ea
+PODFILE CHECKSUM: 24cb7ca79674f5a63612a0e3240637c68b4ae845
 
 COCOAPODS: 1.11.2

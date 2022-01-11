@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		22EED97BC76E2719BB06923C /* Pods_BaseNetworkAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB122778F7BC9E7BFE64C657 /* Pods_BaseNetworkAppTests.framework */; };
+		79ABA153278D61D800214195 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ABA152278D61D800214195 /* ApiHelper.swift */; };
+		79ABA157278D650A00214195 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ABA156278D650A00214195 /* SearchModel.swift */; };
+		79ABA159278D726200214195 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ABA158278D726200214195 /* ResponseParser.swift */; };
 		82456E12CC6C7AF8E8615B1E /* Pods_BaseNetworkApp_BaseNetworkAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36F84D6EC3A0D4D3FC0E42E /* Pods_BaseNetworkApp_BaseNetworkAppUITests.framework */; };
 		9B96474EBF268F780B2DBBFE /* Pods_BaseNetworkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8BEEE7535E2276A6D671D4D /* Pods_BaseNetworkApp.framework */; };
 		AA42BD3E278C5863003056A2 /* BaseNetwork.docc in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD3D278C5863003056A2 /* BaseNetwork.docc */; };
@@ -62,6 +65,9 @@
 		4D8F85A3C2D0FB66AFB20BCD /* Pods-BaseNetworkAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetworkAppTests.release.xcconfig"; path = "Target Support Files/Pods-BaseNetworkAppTests/Pods-BaseNetworkAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5062A3193D477F29A6C0AE16 /* Pods-BaseNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetwork.release.xcconfig"; path = "Target Support Files/Pods-BaseNetwork/Pods-BaseNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		58D86CB047989ADE9CCADAFD /* Pods-BaseNetworkApp-BaseNetworkAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetworkApp-BaseNetworkAppUITests.release.xcconfig"; path = "Target Support Files/Pods-BaseNetworkApp-BaseNetworkAppUITests/Pods-BaseNetworkApp-BaseNetworkAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79ABA152278D61D800214195 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		79ABA156278D650A00214195 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		79ABA158278D726200214195 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
 		7BD28EE0CADE64AAF5EC0581 /* Pods-BaseNetworkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetworkApp.release.xcconfig"; path = "Target Support Files/Pods-BaseNetworkApp/Pods-BaseNetworkApp.release.xcconfig"; sourceTree = "<group>"; };
 		8092CA47BB565FAD61688F59 /* Pods-BaseNetwork-BaseNetworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetwork-BaseNetworkTests.debug.xcconfig"; path = "Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9ABA6EFD4F0CB6FAAB825553 /* Pods-BaseNetworkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetworkApp.debug.xcconfig"; path = "Target Support Files/Pods-BaseNetworkApp/Pods-BaseNetworkApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,7 +160,6 @@
 				ACFEB879779C6A79AAEBD0C4 /* Pods-BaseNetworkAppTests.debug.xcconfig */,
 				4D8F85A3C2D0FB66AFB20BCD /* Pods-BaseNetworkAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -168,6 +173,23 @@
 				CB122778F7BC9E7BFE64C657 /* Pods_BaseNetworkAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79ABA154278D61DF00214195 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				79ABA152278D61D800214195 /* ApiHelper.swift */,
+				79ABA158278D726200214195 /* ResponseParser.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		79ABA155278D649D00214195 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79ABA156278D650A00214195 /* SearchModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AA42BD2F278C5863003056A2 = {
@@ -199,6 +221,8 @@
 		AA42BD3B278C5863003056A2 /* BaseNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				79ABA155278D649D00214195 /* Model */,
+				79ABA154278D61DF00214195 /* Moya */,
 				AA42BD59278C5CB7003056A2 /* Assets */,
 				AA42BD3C278C5863003056A2 /* BaseNetwork.h */,
 				AA42BD3D278C5863003056A2 /* BaseNetwork.docc */,
@@ -297,6 +321,7 @@
 				AA42BD3F278C5863003056A2 /* Sources */,
 				AA42BD40278C5863003056A2 /* Frameworks */,
 				AA42BD41278C5863003056A2 /* Resources */,
+				0A5EB774D543DCD7C04F5812 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -483,6 +508,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		0A5EB774D543DCD7C04F5812 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		37158100689E43A25D35B6F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -612,9 +654,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79ABA153278D61D800214195 /* ApiHelper.swift in Sources */,
 				AA42BD54278C5880003056A2 /* Testing.swift in Sources */,
 				AA42BD5D278C6178003056A2 /* Bundle.swift in Sources */,
+				79ABA157278D650A00214195 /* SearchModel.swift in Sources */,
 				AA42BD3E278C5863003056A2 /* BaseNetwork.docc in Sources */,
+				79ABA159278D726200214195 /* ResponseParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -922,6 +967,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -950,6 +996,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
