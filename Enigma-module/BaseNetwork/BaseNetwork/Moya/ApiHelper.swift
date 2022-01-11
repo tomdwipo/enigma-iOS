@@ -11,9 +11,9 @@ import Moya
 
 
 extension TargetType {
-    
+//https://dev-ruangkonstruksi-backend.herokuapp.com/   
     var baseURL: URL {
-        guard let url = URL(string: "https://customer-api-stag.rata.id/") else { fatalError("Server in problem") }
+        guard let url = URL(string: "https://dev-ruangkonstruksi-backend.herokuapp.com/") else { fatalError("Server in problem") }
         return url
     }
 
