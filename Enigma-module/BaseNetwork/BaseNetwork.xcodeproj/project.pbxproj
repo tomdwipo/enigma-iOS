@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		22EED97BC76E2719BB06923C /* Pods_BaseNetworkAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB122778F7BC9E7BFE64C657 /* Pods_BaseNetworkAppTests.framework */; };
+		796EEB0F278DA5B500D8BDF2 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796EEB0E278DA5B500D8BDF2 /* ApiHelper.swift */; };
+		796EEB13278DA84E00D8BDF2 /* FieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796EEB12278DA84E00D8BDF2 /* FieldModel.swift */; };
+		796EEB15278DAA6F00D8BDF2 /* PopularModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796EEB14278DAA6F00D8BDF2 /* PopularModel.swift */; };
+		796EEB17278DAE2200D8BDF2 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796EEB16278DAE2200D8BDF2 /* SearchModel.swift */; };
 		82456E12CC6C7AF8E8615B1E /* Pods_BaseNetworkApp_BaseNetworkAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36F84D6EC3A0D4D3FC0E42E /* Pods_BaseNetworkApp_BaseNetworkAppUITests.framework */; };
 		9B96474EBF268F780B2DBBFE /* Pods_BaseNetworkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8BEEE7535E2276A6D671D4D /* Pods_BaseNetworkApp.framework */; };
 		AA42BD3E278C5863003056A2 /* BaseNetwork.docc in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD3D278C5863003056A2 /* BaseNetwork.docc */; };
 		AA42BD44278C5863003056A2 /* BaseNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA42BD39278C5863003056A2 /* BaseNetwork.framework */; };
 		AA42BD49278C5863003056A2 /* BaseNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD48278C5863003056A2 /* BaseNetworkTests.swift */; };
 		AA42BD4A278C5863003056A2 /* BaseNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = AA42BD3C278C5863003056A2 /* BaseNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA42BD54278C5880003056A2 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD53278C5880003056A2 /* Testing.swift */; };
+		AA42BD54278C5880003056A2 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD53278C5880003056A2 /* BaseService.swift */; };
 		AA42BD56278C5C78003056A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA42BD55278C5C78003056A2 /* Assets.xcassets */; };
 		AA42BD5D278C6178003056A2 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD5C278C6178003056A2 /* Bundle.swift */; };
 		AA42BD5F278C6354003056A2 /* StoryboardTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA42BD5E278C6354003056A2 /* StoryboardTest.storyboard */; };
@@ -62,6 +66,11 @@
 		4D8F85A3C2D0FB66AFB20BCD /* Pods-BaseNetworkAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetworkAppTests.release.xcconfig"; path = "Target Support Files/Pods-BaseNetworkAppTests/Pods-BaseNetworkAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5062A3193D477F29A6C0AE16 /* Pods-BaseNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetwork.release.xcconfig"; path = "Target Support Files/Pods-BaseNetwork/Pods-BaseNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		58D86CB047989ADE9CCADAFD /* Pods-BaseNetworkApp-BaseNetworkAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetworkApp-BaseNetworkAppUITests.release.xcconfig"; path = "Target Support Files/Pods-BaseNetworkApp-BaseNetworkAppUITests/Pods-BaseNetworkApp-BaseNetworkAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		796EEB0E278DA5B500D8BDF2 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		796EEB10278DA66600D8BDF2 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		796EEB12278DA84E00D8BDF2 /* FieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModel.swift; sourceTree = "<group>"; };
+		796EEB14278DAA6F00D8BDF2 /* PopularModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularModel.swift; sourceTree = "<group>"; };
+		796EEB16278DAE2200D8BDF2 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		7BD28EE0CADE64AAF5EC0581 /* Pods-BaseNetworkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetworkApp.release.xcconfig"; path = "Target Support Files/Pods-BaseNetworkApp/Pods-BaseNetworkApp.release.xcconfig"; sourceTree = "<group>"; };
 		8092CA47BB565FAD61688F59 /* Pods-BaseNetwork-BaseNetworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetwork-BaseNetworkTests.debug.xcconfig"; path = "Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9ABA6EFD4F0CB6FAAB825553 /* Pods-BaseNetworkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseNetworkApp.debug.xcconfig"; path = "Target Support Files/Pods-BaseNetworkApp/Pods-BaseNetworkApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +79,7 @@
 		AA42BD3D278C5863003056A2 /* BaseNetwork.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BaseNetwork.docc; sourceTree = "<group>"; };
 		AA42BD43278C5863003056A2 /* BaseNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA42BD48278C5863003056A2 /* BaseNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkTests.swift; sourceTree = "<group>"; };
-		AA42BD53278C5880003056A2 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
+		AA42BD53278C5880003056A2 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		AA42BD55278C5C78003056A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA42BD5C278C6178003056A2 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		AA42BD5E278C6354003056A2 /* StoryboardTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardTest.storyboard; sourceTree = "<group>"; };
@@ -154,7 +163,6 @@
 				ACFEB879779C6A79AAEBD0C4 /* Pods-BaseNetworkAppTests.debug.xcconfig */,
 				4D8F85A3C2D0FB66AFB20BCD /* Pods-BaseNetworkAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -170,9 +178,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		796EEB0D278DA59E00D8BDF2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				796EEB0E278DA5B500D8BDF2 /* ApiHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		796EEB11278DA84000D8BDF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				796EEB12278DA84E00D8BDF2 /* FieldModel.swift */,
+				796EEB14278DAA6F00D8BDF2 /* PopularModel.swift */,
+				796EEB16278DAE2200D8BDF2 /* SearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AA42BD2F278C5863003056A2 = {
 			isa = PBXGroup;
 			children = (
+				796EEB10278DA66600D8BDF2 /* Config.xcconfig */,
 				AA42BD3B278C5863003056A2 /* BaseNetwork */,
 				AA42BD47278C5863003056A2 /* BaseNetworkTests */,
 				AA42BD65278C647C003056A2 /* BaseNetworkApp */,
@@ -199,10 +226,12 @@
 		AA42BD3B278C5863003056A2 /* BaseNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				796EEB11278DA84000D8BDF2 /* Model */,
+				796EEB0D278DA59E00D8BDF2 /* Helper */,
 				AA42BD59278C5CB7003056A2 /* Assets */,
 				AA42BD3C278C5863003056A2 /* BaseNetwork.h */,
 				AA42BD3D278C5863003056A2 /* BaseNetwork.docc */,
-				AA42BD53278C5880003056A2 /* Testing.swift */,
+				AA42BD53278C5880003056A2 /* BaseService.swift */,
 				AA42BD5C278C6178003056A2 /* Bundle.swift */,
 			);
 			path = BaseNetwork;
@@ -297,6 +326,7 @@
 				AA42BD3F278C5863003056A2 /* Sources */,
 				AA42BD40278C5863003056A2 /* Frameworks */,
 				AA42BD41278C5863003056A2 /* Resources */,
+				D20928B1E98189591BC2164E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -588,6 +618,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseNetworkApp/Pods-BaseNetworkApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D20928B1E98189591BC2164E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F1A7C77E71E19EA3456664B3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -612,7 +659,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA42BD54278C5880003056A2 /* Testing.swift in Sources */,
+				796EEB0F278DA5B500D8BDF2 /* ApiHelper.swift in Sources */,
+				AA42BD54278C5880003056A2 /* BaseService.swift in Sources */,
+				796EEB13278DA84E00D8BDF2 /* FieldModel.swift in Sources */,
+				796EEB15278DAA6F00D8BDF2 /* PopularModel.swift in Sources */,
+				796EEB17278DAE2200D8BDF2 /* SearchModel.swift in Sources */,
 				AA42BD5D278C6178003056A2 /* Bundle.swift in Sources */,
 				AA42BD3E278C5863003056A2 /* BaseNetwork.docc in Sources */,
 			);
@@ -922,6 +973,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -950,6 +1002,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

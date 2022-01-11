@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-BaseNetwork-BaseNetworkTests/Pods-BaseNetwork-BaseNetworkTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire-iOS14.7/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Moya-iOS14.7/Moya.framework

@@ -129,8 +129,10 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+   spec.dependency "Alamofire", "~> 5.4.4"
+   spec.dependency "Moya", "~> 15.0.0"
+
 spec.license = "MIT (iOS)"
-spec.platform         = :ios, "9.0"
+spec.platform         = :ios, "10.0"
 
 end

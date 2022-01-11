@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BaseNetwork"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire-iOS15.0" "${PODS_CONFIGURATION_BUILD_DIR}/BaseNetwork" "${PODS_CONFIGURATION_BUILD_DIR}/Moya-iOS15.0"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BaseNetwork/BaseNetwork.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "BaseNetwork"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire-iOS15.0/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/BaseNetwork/BaseNetwork.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Moya-iOS15.0/Moya.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "BaseNetwork" -framework "CFNetwork" -framework "Foundation" -framework "Moya"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

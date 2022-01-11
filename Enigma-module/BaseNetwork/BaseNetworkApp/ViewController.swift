@@ -9,10 +9,16 @@ import UIKit
 import BaseNetwork
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var titleTestLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(Testing())
+        BaseService().search(query: "", page: "1", limit: "10") { data in
+            print("data \(data)")
+        }
+        
+//        Testing().postPopular()
+
         // Do any additional setup after loading the view.
     }
 
