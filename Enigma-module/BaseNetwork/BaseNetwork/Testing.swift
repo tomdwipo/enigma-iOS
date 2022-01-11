@@ -16,7 +16,8 @@ public class Testing {
     }
     
     public func test(resultResponse: @escaping (_ role: String) -> Void){
-        let provider = MoyaProvider<ApiHelper>()
+        let plugin: PluginType = NetworkLoggerPlugin(configuration: .init( logOptions: .verbose))
+        let provider = MoyaProvider<ApiHelper>(plugins: [plugin])
         provider.request(.roles, completion: { result in
             switch result {
             case .success(let response):

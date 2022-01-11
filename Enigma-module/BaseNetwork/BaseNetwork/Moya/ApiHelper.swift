@@ -12,14 +12,14 @@ import Moya
 
 extension TargetType {
 //https://dev-ruangkonstruksi-backend.herokuapp.com/   
-    var baseURL: URL {
-        guard let url = URL(string: "https://dev-ruangkonstruksi-backend.herokuapp.com/") else { fatalError("Server in problem") }
-        return url
-    }
+//    var baseURL: URL {
+//        guard let url = URL(string: "https://dev-ruangkonstruksi-backend.herokuapp.com/") else { fatalError("Server in problem") }
+//        return url
+//    }
 
-    var parameterEncoding: ParameterEncoding {
-        return URLEncoding.default
-    }
+//    var parameterEncoding: ParameterEncoding {
+//        return URLEncoding.default
+//    }
 }
 
 
@@ -31,6 +31,12 @@ enum ApiHelper {
 
 extension ApiHelper: TargetType {
   
+    var baseURL: URL {
+        guard let url = URL(string: "https://dev-ruangkonstruksi-backend.herokuapp.com/") else { fatalError("Server in problem") }
+        return url
+    }
+    
+    
     var path: String {
         switch self {
         case .search:
@@ -79,7 +85,7 @@ extension ApiHelper: TargetType {
     var task: Task {
         switch self {
         case .search, .roles:
-            return .requestParameters(parameters: parameters, encoding: parameterEncoding) //URLEncoding.queryString
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default) //URLEncoding.queryString parameterEncoding
         case .actorList:
             return .requestParameters(parameters: parameters, encoding: JSONEncoding.default)
         }

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let test = Testing()
         
-        test.search(resultResponse: { role in
+        test.test(resultResponse: { role in
             print("oke role \(role)")
             self.roleLabel.text = "role \(role)"
         })
