@@ -28,7 +28,6 @@ class LoginViewController: UIViewController {
 //         icon.kf.setImage(with: url)
         icon.image = UIImage(named: "Vectors", in: BundleNetwork.bundle(), compatibleWith: nil)
         
-        print(Testing())
         
         
     }
