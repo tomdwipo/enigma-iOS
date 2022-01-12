@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4D489B1DD2AD477D6BA8DBFB /* Pods_EnigmaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8512880E53F2CDFDD4CB5BA /* Pods_EnigmaTests.framework */; };
+		799C96B2278EC8C1002E5651 /* Background.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799C96B1278EC8C1002E5651 /* Background.storyboard */; };
+		799C96B4278EC9A1002E5651 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C96B3278EC9A1002E5651 /* BackgroundViewController.swift */; };
+		799C96B8278ECB60002E5651 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C96B6278ECB60002E5651 /* AudioViewController.swift */; };
+		799C96B9278ECB60002E5651 /* AudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799C96B7278ECB60002E5651 /* AudioViewController.xib */; };
+		799C96BE278ECC18002E5651 /* FeelinGood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 799C96BB278ECC18002E5651 /* FeelinGood.mp3 */; };
+		799C96C4278ECE27002E5651 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C96C2278ECE27002E5651 /* LocationViewController.swift */; };
+		799C96C5278ECE27002E5651 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799C96C3278ECE27002E5651 /* LocationViewController.xib */; };
 		AA42BD1927886087003056A2 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD1727886087003056A2 /* BaseCollectionViewCell.swift */; };
 		AA42BD1A27886087003056A2 /* BaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA42BD1827886087003056A2 /* BaseCollectionViewCell.xib */; };
 		AA42BD1E27886283003056A2 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD1C27886283003056A2 /* ContentCollectionViewCell.swift */; };
@@ -62,6 +69,13 @@
 		0E59401AF836F3C1C702BEA8 /* Pods-Enigma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enigma.release.xcconfig"; path = "Target Support Files/Pods-Enigma/Pods-Enigma.release.xcconfig"; sourceTree = "<group>"; };
 		58007755D0599A78FAFC186A /* Pods-EnigmaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnigmaTests.release.xcconfig"; path = "Target Support Files/Pods-EnigmaTests/Pods-EnigmaTests.release.xcconfig"; sourceTree = "<group>"; };
 		666012C167E82C53304B004F /* Pods_Enigma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Enigma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		799C96B1278EC8C1002E5651 /* Background.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Background.storyboard; sourceTree = "<group>"; };
+		799C96B3278EC9A1002E5651 /* BackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
+		799C96B6278ECB60002E5651 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		799C96B7278ECB60002E5651 /* AudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioViewController.xib; sourceTree = "<group>"; };
+		799C96BB278ECC18002E5651 /* FeelinGood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FeelinGood.mp3; sourceTree = "<group>"; };
+		799C96C2278ECE27002E5651 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		799C96C3278ECE27002E5651 /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
 		8A993F07F1EB83620CAA2257 /* Pods-EnigmaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnigmaTests.debug.xcconfig"; path = "Target Support Files/Pods-EnigmaTests/Pods-EnigmaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA42BD1727886087003056A2 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA42BD1827886087003056A2 /* BaseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -134,6 +148,51 @@
 				E8512880E53F2CDFDD4CB5BA /* Pods_EnigmaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		799C96B0278EC8A0002E5651 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				799C96C6278ED65D002E5651 /* Container */,
+				799C96C1278ECE00002E5651 /* Location */,
+				799C96B5278ECB34002E5651 /* Audio */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		799C96B5278ECB34002E5651 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				799C96B6278ECB60002E5651 /* AudioViewController.swift */,
+				799C96B7278ECB60002E5651 /* AudioViewController.xib */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		799C96BA278ECC18002E5651 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				799C96BB278ECC18002E5651 /* FeelinGood.mp3 */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		799C96C1278ECE00002E5651 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				799C96C2278ECE27002E5651 /* LocationViewController.swift */,
+				799C96C3278ECE27002E5651 /* LocationViewController.xib */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		799C96C6278ED65D002E5651 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				799C96B1278EC8C1002E5651 /* Background.storyboard */,
+				799C96B3278EC9A1002E5651 /* BackgroundViewController.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 		AA42BD162788604F003056A2 /* BaseCollection */ = {
@@ -245,6 +304,8 @@
 		AAD552C62784629400F30A7F /* Enigma */ = {
 			isa = PBXGroup;
 			children = (
+				799C96BA278ECC18002E5651 /* SupportingFiles */,
+				799C96B0278EC8A0002E5651 /* Background */,
 				AA42BD2C278C5701003056A2 /* Model */,
 				AA42BD29278C52F9003056A2 /* Helper */,
 				AA8497DD27871B4A00BA8A7F /* Extension */,
@@ -463,7 +524,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799C96B9278ECB60002E5651 /* AudioViewController.xib in Resources */,
 				AAD5530F2784795E00F30A7F /* SaveViewController.xib in Resources */,
+				799C96BE278ECC18002E5651 /* FeelinGood.mp3 in Resources */,
 				AA42BD1A27886087003056A2 /* BaseCollectionViewCell.xib in Resources */,
 				AAD553162785BCCF00F30A7F /* NewsViewCell.xib in Resources */,
 				AA8497DC2787120400BA8A7F /* LoginViewController.xib in Resources */,
@@ -473,8 +536,10 @@
 				AAD553212785C0FE00F30A7F /* HostViewCell.xib in Resources */,
 				AAD552FE27846D2100F30A7F /* HomeViewCell.xib in Resources */,
 				AA42BD2427886517003056A2 /* TrendingCollectionViewCell.xib in Resources */,
+				799C96C5278ECE27002E5651 /* LocationViewController.xib in Resources */,
 				AAD552D12784629500F30A7F /* Assets.xcassets in Resources */,
 				AAD553082784775C00F30A7F /* HostViewController.xib in Resources */,
+				799C96B2278EC8C1002E5651 /* Background.storyboard in Resources */,
 				AAD5531C2785BEAF00F30A7F /* HeaderTableView.xib in Resources */,
 				AA42BD2727886C1B003056A2 /* Host.storyboard in Resources */,
 				AAD552CF2784629400F30A7F /* Main.storyboard in Resources */,
@@ -567,15 +632,18 @@
 				AAD553202785C0FE00F30A7F /* HostViewCell.swift in Sources */,
 				AAD553072784775C00F30A7F /* HostViewController.swift in Sources */,
 				AAD552F927846AAB00F30A7F /* HomeContainerViewController.swift in Sources */,
+				799C96B4278EC9A1002E5651 /* BackgroundViewController.swift in Sources */,
 				AA42BD2327886517003056A2 /* TrendingCollectionViewCell.swift in Sources */,
 				AA42BD1927886087003056A2 /* BaseCollectionViewCell.swift in Sources */,
 				AA42BD1E27886283003056A2 /* ContentCollectionViewCell.swift in Sources */,
 				AA42BD2B278C5398003056A2 /* UserDefaultsHelper.swift in Sources */,
 				AAD5530E2784795E00F30A7F /* SaveViewController.swift in Sources */,
 				AAD552FD27846D2100F30A7F /* HomeViewCell.swift in Sources */,
+				799C96C4278ECE27002E5651 /* LocationViewController.swift in Sources */,
 				AAD552C82784629400F30A7F /* AppDelegate.swift in Sources */,
 				AAD5531A2785BE9A00F30A7F /* HeaderTableView.swift in Sources */,
 				AAD553152785BCCF00F30A7F /* NewsViewCell.swift in Sources */,
+				799C96B8278ECB60002E5651 /* AudioViewController.swift in Sources */,
 				AA8497D527870DE800BA8A7F /* RoundedImageView.swift in Sources */,
 				AA8497DF27871B6100BA8A7F /* Navigation+Extension.swift in Sources */,
 				AAD552CA2784629400F30A7F /* SceneDelegate.swift in Sources */,
@@ -747,11 +815,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Enigma/Info/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "location when use";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,11 +845,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Enigma/Info/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "location when use";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
