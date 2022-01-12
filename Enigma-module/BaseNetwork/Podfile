@@ -5,7 +5,6 @@ target 'BaseNetwork' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Moya', '~> 15.0'
-
   # Pods for BaseNetwork
 
   target 'BaseNetworkTests' do
@@ -17,7 +16,7 @@ end
 target 'BaseNetworkApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'BaseNetwork' , :path => "../"
+ # pod 'BaseNetwork' , :path => "../"
   # Pods for BaseNetworkApp
 
   target 'BaseNetworkAppTests' do

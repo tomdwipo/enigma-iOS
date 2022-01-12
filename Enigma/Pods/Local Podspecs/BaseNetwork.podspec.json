@@ -4,7 +4,6 @@
   "summary": "A short description of BaseNetwork.",
   "description": "test",
   "homepage": "http://EXAMPLE/BaseNetwork",
-  "license": "MIT (iOS)",
   "authors": {
     "Tommy Dwi Putranto": "tommyputranto1@gmail.com"
   },
@@ -15,7 +14,16 @@
   "source_files": "BaseNetwork/BaseNetwork/**/*.{h,m,swift}",
   "exclude_files": "Classes/Exclude",
   "resources": "BaseNetwork/BaseNetwork/Assets/**/*.{storyboard,xib,xcassets,imageset,json,png}",
+  "dependencies": {
+    "Alamofire": [
+      "~> 5.4.4"
+    ],
+    "Moya": [
+      "~> 15.0.0"
+    ]
+  },
+  "license": "MIT (iOS)",
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   }
 }

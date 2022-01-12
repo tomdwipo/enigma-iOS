@@ -1,6 +1,0 @@
-framework module BaseNetwork {
-  umbrella header "BaseNetwork-umbrella.h"
-
-  export *
-  module * { export * }
-}
