@@ -19,6 +19,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.methodOfReceivedNotification(notification:)), name: Notification.Name("NotificationIdentifier"), object: nil)
+
+
         usernameTextField.delegate = self
         passwordTextField.delegate = self
         
@@ -32,8 +35,16 @@ class LoginViewController: UIViewController {
         
     }
     
-    deinit {
+    @objc func methodOfReceivedNotification(notification: Notification) {
+        self.usernameTextField.text = "gfdg"
+    }
+    
+    func fetch(_ completion: () -> Void) {
         
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("NotificationIdentifier"), object: nil)
     }
     
     
@@ -45,6 +56,7 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
+    
     
 
     @IBAction func loginTapped(_ sender: Any) {
