@@ -15,6 +15,7 @@
 		799C96BE278ECC18002E5651 /* FeelinGood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 799C96BB278ECC18002E5651 /* FeelinGood.mp3 */; };
 		799C96C4278ECE27002E5651 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C96C2278ECE27002E5651 /* LocationViewController.swift */; };
 		799C96C5278ECE27002E5651 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799C96C3278ECE27002E5651 /* LocationViewController.xib */; };
+		AA05DB2927904A28001CEA4A /* Enigma.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA05DB2727904A28001CEA4A /* Enigma.xcdatamodeld */; };
 		AA42BD1927886087003056A2 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD1727886087003056A2 /* BaseCollectionViewCell.swift */; };
 		AA42BD1A27886087003056A2 /* BaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA42BD1827886087003056A2 /* BaseCollectionViewCell.xib */; };
 		AA42BD1E27886283003056A2 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42BD1C27886283003056A2 /* ContentCollectionViewCell.swift */; };
@@ -77,6 +78,7 @@
 		799C96C2278ECE27002E5651 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		799C96C3278ECE27002E5651 /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
 		8A993F07F1EB83620CAA2257 /* Pods-EnigmaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnigmaTests.debug.xcconfig"; path = "Target Support Files/Pods-EnigmaTests/Pods-EnigmaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA05DB2827904A28001CEA4A /* Enigma.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Enigma.xcdatamodel; sourceTree = "<group>"; };
 		AA42BD1727886087003056A2 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA42BD1827886087003056A2 /* BaseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseCollectionViewCell.xib; sourceTree = "<group>"; };
 		AA42BD1C27886283003056A2 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				AAD552CB2784629400F30A7F /* ViewController.swift */,
 				AAD552D02784629500F30A7F /* Assets.xcassets */,
 				AAD552D22784629500F30A7F /* LaunchScreen.storyboard */,
+				AA05DB2727904A28001CEA4A /* Enigma.xcdatamodeld */,
 			);
 			path = Enigma;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 				AA42BD2327886517003056A2 /* TrendingCollectionViewCell.swift in Sources */,
 				AA42BD1927886087003056A2 /* BaseCollectionViewCell.swift in Sources */,
 				AA42BD1E27886283003056A2 /* ContentCollectionViewCell.swift in Sources */,
+				AA05DB2927904A28001CEA4A /* Enigma.xcdatamodeld in Sources */,
 				AA42BD2B278C5398003056A2 /* UserDefaultsHelper.swift in Sources */,
 				AAD5530E2784795E00F30A7F /* SaveViewController.swift in Sources */,
 				AAD552FD27846D2100F30A7F /* HomeViewCell.swift in Sources */,
@@ -814,7 +818,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Enigma/Info/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = WhenInUseUsag;
@@ -939,6 +942,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA05DB2727904A28001CEA4A /* Enigma.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA05DB2827904A28001CEA4A /* Enigma.xcdatamodel */,
+			);
+			currentVersion = AA05DB2827904A28001CEA4A /* Enigma.xcdatamodel */;
+			path = Enigma.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AAD552BC2784629400F30A7F /* Project object */;
 }
