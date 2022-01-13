@@ -37,14 +37,14 @@ class ListDataViewController: UIViewController {
           
           let saveAction = UIAlertAction(title: "Save",
                                          style: .default) {
-            [unowned self] action in
+            action in
                                           
             guard let textField = alert.textFields?.first,
               let dataToSave = textField.text else {
                 return
             }
             
-              self.save(name: dataToSave)
+            self.save(name: dataToSave)
             self.tableView.reloadData()
           }
           
@@ -98,7 +98,9 @@ class ListDataViewController: UIViewController {
         let manageContext = appDelegate.persistentContainer.viewContext
 
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "CoreData")
-        fetchRequest.predicate = NSPredicate(format: "name = %@", name)
+       
+        
+        fetchRequest.predicate = NSPredicate(format: "name = %@ ", name)
         
         do {
             let object = try manageContext.fetch(fetchRequest)
@@ -130,7 +132,7 @@ extension ListDataViewController: UITableViewDelegate, UITableViewDataSource {
             let person = people[indexPath.row]
             self.delete(name: person.value(forKeyPath: "name") as!  String)
             self.people.remove(at: indexPath.row)
-            self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.left)
         }
     }
     
