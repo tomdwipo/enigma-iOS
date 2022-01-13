@@ -29,6 +29,9 @@
 		AA8497DB2787120400BA8A7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8497D92787120400BA8A7F /* LoginViewController.swift */; };
 		AA8497DC2787120400BA8A7F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8497DA2787120400BA8A7F /* LoginViewController.xib */; };
 		AA8497DF27871B6100BA8A7F /* Navigation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8497DE27871B6100BA8A7F /* Navigation+Extension.swift */; };
+		AA92C897278FDFEA00C6090E /* ListData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA92C896278FDFEA00C6090E /* ListData.storyboard */; };
+		AA92C899278FE00400C6090E /* ListDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA92C898278FE00400C6090E /* ListDataViewController.swift */; };
+		AA92C89C278FFFCB00C6090E /* Enigma.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA92C89A278FFFCA00C6090E /* Enigma.xcdatamodeld */; };
 		AAD552C82784629400F30A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD552C72784629400F30A7F /* AppDelegate.swift */; };
 		AAD552CA2784629400F30A7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD552C92784629400F30A7F /* SceneDelegate.swift */; };
 		AAD552CC2784629400F30A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD552CB2784629400F30A7F /* ViewController.swift */; };
@@ -91,6 +94,9 @@
 		AA8497D92787120400BA8A7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA8497DA2787120400BA8A7F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AA8497DE27871B6100BA8A7F /* Navigation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation+Extension.swift"; sourceTree = "<group>"; };
+		AA92C896278FDFEA00C6090E /* ListData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListData.storyboard; sourceTree = "<group>"; };
+		AA92C898278FE00400C6090E /* ListDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataViewController.swift; sourceTree = "<group>"; };
+		AA92C89B278FFFCB00C6090E /* Enigma.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Enigma.xcdatamodel; sourceTree = "<group>"; };
 		AAD552C42784629400F30A7F /* Enigma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enigma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD552C72784629400F30A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD552C92784629400F30A7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -281,6 +287,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		AA92C894278FDFBC00C6090E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AA92C895278FDFC900C6090E /* Container */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AA92C895278FDFC900C6090E /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				AA92C896278FDFEA00C6090E /* ListData.storyboard */,
+				AA92C898278FE00400C6090E /* ListDataViewController.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 		AAD552BB2784629400F30A7F = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +327,7 @@
 		AAD552C62784629400F30A7F /* Enigma */ = {
 			isa = PBXGroup;
 			children = (
+				AA92C894278FDFBC00C6090E /* CoreData */,
 				799C96BA278ECC18002E5651 /* SupportingFiles */,
 				799C96B0278EC8A0002E5651 /* Background */,
 				AA42BD2C278C5701003056A2 /* Model */,
@@ -319,6 +343,7 @@
 				AAD552CB2784629400F30A7F /* ViewController.swift */,
 				AAD552D02784629500F30A7F /* Assets.xcassets */,
 				AAD552D22784629500F30A7F /* LaunchScreen.storyboard */,
+				AA92C89A278FFFCA00C6090E /* Enigma.xcdatamodeld */,
 			);
 			path = Enigma;
 			sourceTree = "<group>";
@@ -524,6 +549,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA92C897278FDFEA00C6090E /* ListData.storyboard in Resources */,
 				799C96B9278ECB60002E5651 /* AudioViewController.xib in Resources */,
 				AAD5530F2784795E00F30A7F /* SaveViewController.xib in Resources */,
 				799C96BE278ECC18002E5651 /* FeelinGood.mp3 in Resources */,
@@ -648,6 +674,8 @@
 				AA8497DF27871B6100BA8A7F /* Navigation+Extension.swift in Sources */,
 				AAD552CA2784629400F30A7F /* SceneDelegate.swift in Sources */,
 				AAD5530A2784793100F30A7F /* SaveContainerViewController.swift in Sources */,
+				AA92C89C278FFFCB00C6090E /* Enigma.xcdatamodeld in Sources */,
+				AA92C899278FE00400C6090E /* ListDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,7 +842,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Enigma/Info/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = WhenInUseUsag;
@@ -939,6 +966,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA92C89A278FFFCA00C6090E /* Enigma.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA92C89B278FFFCB00C6090E /* Enigma.xcdatamodel */,
+			);
+			currentVersion = AA92C89B278FFFCB00C6090E /* Enigma.xcdatamodel */;
+			path = Enigma.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AAD552BC2784629400F30A7F /* Project object */;
 }
