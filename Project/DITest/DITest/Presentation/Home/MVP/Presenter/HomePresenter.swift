@@ -10,12 +10,12 @@ import Module_login
 
 struct HomePresenter {
     let usecase: GetMessageUseCase
-    weak var view: HomeView?
+    let view: HomeView
     var isChangeData: Bool = true
     
     
     mutating func changeData() {
         isChangeData = !isChangeData
-        view?.updateText(text: isChangeData ? usecase.getMessage() : "texting")
+        view.updateText(text: isChangeData ? usecase.getMessage() : "texting")
     }
 }
