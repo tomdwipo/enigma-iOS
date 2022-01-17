@@ -144,6 +144,15 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		AA683CB82795A289001DD1F5 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				AA683CAB2795853D001DD1F5 /* View */,
+				AA683CB227958E6C001DD1F5 /* Presenter */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
 		AAEA4D4327913D2F007DD383 = {
 			isa = PBXGroup;
 			children = (
@@ -224,8 +233,7 @@
 		AAF3546B2791A1700052EF08 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				AA683CB227958E6C001DD1F5 /* Presenter */,
-				AA683CAB2795853D001DD1F5 /* View */,
+				AA683CB82795A289001DD1F5 /* MVP */,
 				AAF3546C2791A17D0052EF08 /* Assembly */,
 			);
 			path = Home;
