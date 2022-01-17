@@ -12,6 +12,9 @@ protocol LoginNetwork {
 }
 
 struct LoginNetworkImpl: LoginNetwork {
+    
+    
+    
     func getLogin() -> LoginModel {
         return LoginModel(message: "Oke")
     }

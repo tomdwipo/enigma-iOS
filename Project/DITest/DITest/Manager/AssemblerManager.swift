@@ -7,12 +7,25 @@
 
 import Foundation
 import Swinject
-
+import Module_login
 class AssemblerManager {
  
     static let assembler = Assembler([
-        MainAssembly()
+        MainAssembly(),
+        ModuleLoginAssembly(),
+        HomeAssembly(),
+        
+        //
+        //
+        //
+        ///
+        ////
+        ///
     ])
     
     static let viewcontroller = assembler.resolver.resolve(ViewController.self)!
+    static let homeViewcontroller = assembler.resolver.resolve(HomeView.self)!
+
 }
+
+

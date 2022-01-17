@@ -12,7 +12,7 @@ final class Module_loginTests: XCTestCase {
     }
     
     func test_usecase_with_swinject(){
-        let sut: GetMessageUseCase = SetupModuleLogin.resolve
+        let sut: GetMessageUseCase = SetupModuleLogin.usecase
         XCTAssertEqual(sut.getMessage(), "Oke")
     }
 }

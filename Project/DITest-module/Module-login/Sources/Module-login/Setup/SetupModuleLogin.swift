@@ -8,9 +8,11 @@
 import Foundation
 import Swinject
 
-class ModuleLoginAssembly: Assembly {
-   
-    func assemble(container: Container) {
+public class ModuleLoginAssembly: Assembly {
+    public init(){
+        
+    }
+    public func assemble(container: Container) {
         container.register(LoginNetwork.self) { _ in LoginNetworkImpl() }
         container.register(LoginRepository.self) { r in LoginRepositoryImpl(network: r.resolve(LoginNetwork.self)!) }
         container.register(GetMessageUseCase.self) { r in
@@ -26,5 +28,9 @@ public class SetupModuleLogin {
         ModuleLoginAssembly()
     ])
     
-    public static let resolve = assembler.resolver.resolve(GetMessageUseCase.self)!
+    public static let usecase = assembler.resolver.resolve(GetMessageUseCase.self)!
+    //
+    //
+    //
+    //
 }
