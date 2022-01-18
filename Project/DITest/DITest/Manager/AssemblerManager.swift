@@ -14,7 +14,7 @@ class AssemblerManager {
         MainAssembly(),
         ModuleLoginAssembly(),
         HomeAssembly(),
-        
+        MoreAssembly()
         //
         //
         //
@@ -25,6 +25,7 @@ class AssemblerManager {
     
     static let viewcontroller = assembler.resolver.resolve(ViewController.self)!
     static let homeViewcontroller = assembler.resolver.resolve(HomeView.self)!
+    static let moreViewcontroller = assembler.resolver.resolve(MoreView.self)!
 
 }
 

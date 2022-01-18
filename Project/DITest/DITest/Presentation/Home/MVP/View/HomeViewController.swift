@@ -30,6 +30,10 @@ class HomeViewController: UIViewController, HomeView {
     func updateText(text: String){
         self.textLabel.text = text
     }
+    
+    @IBAction func moreTapped(_ sender: Any) {
+      present(AssemblerManager.moreViewcontroller, animated: true)  
+    }
 }
 
 
