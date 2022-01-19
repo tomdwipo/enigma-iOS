@@ -15,7 +15,7 @@ protocol MoreRouterProtocol {
 struct MoreRouter: MoreRouterProtocol {
     
     func navigateToMorePage(caller: UIViewController) {
-        caller.present(NextViewController(), animated: true)
+        caller.present(AssemblerManager.nextViewcontroller, animated: true)
     }
     
 }
