@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA15525F279985B60053EB1A /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA15525D279985B60053EB1A /* GoViewController.swift */; };
+		AA155260279985B60053EB1A /* GoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA15525E279985B60053EB1A /* GoViewController.xib */; };
+		AA155263279985FD0053EB1A /* GoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA155262279985FD0053EB1A /* GoViewModel.swift */; };
+		AA155266279987800053EB1A /* GoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA155265279987800053EB1A /* GoAssembly.swift */; };
 		AA479C1D2796E52800F77211 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C1B2796E52800F77211 /* MoreViewController.swift */; };
 		AA479C1E2796E52800F77211 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA479C1C2796E52800F77211 /* MoreViewController.xib */; };
 		AA479C202796E53E00F77211 /* MoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479C1F2796E53E00F77211 /* MoreInteractor.swift */; };
@@ -64,6 +68,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA15525D279985B60053EB1A /* GoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewController.swift; sourceTree = "<group>"; };
+		AA15525E279985B60053EB1A /* GoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoViewController.xib; sourceTree = "<group>"; };
+		AA155262279985FD0053EB1A /* GoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewModel.swift; sourceTree = "<group>"; };
+		AA155265279987800053EB1A /* GoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoAssembly.swift; sourceTree = "<group>"; };
 		AA479C1B2796E52800F77211 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		AA479C1C2796E52800F77211 /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		AA479C1F2796E53E00F77211 /* MoreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInteractor.swift; sourceTree = "<group>"; };
@@ -119,6 +127,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA15525A2799858F0053EB1A /* Go */ = {
+			isa = PBXGroup;
+			children = (
+				AA15525B279985980053EB1A /* MVVM+Combine */,
+			);
+			path = Go;
+			sourceTree = "<group>";
+		};
+		AA15525B279985980053EB1A /* MVVM+Combine */ = {
+			isa = PBXGroup;
+			children = (
+				AA155264279987700053EB1A /* Assembly */,
+				AA155261279985F00053EB1A /* ViewModel */,
+				AA15525C279985A70053EB1A /* View */,
+			);
+			path = "MVVM+Combine";
+			sourceTree = "<group>";
+		};
+		AA15525C279985A70053EB1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA15525D279985B60053EB1A /* GoViewController.swift */,
+				AA15525E279985B60053EB1A /* GoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA155261279985F00053EB1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA155262279985FD0053EB1A /* GoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA155264279987700053EB1A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				AA155265279987800053EB1A /* GoAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		AA479C142796E4AD00F77211 /* More */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +438,7 @@
 		AAF354702791A2C60052EF08 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AA15525A2799858F0053EB1A /* Go */,
 				AA479C2A2796EA0D00F77211 /* Next */,
 				AA479C142796E4AD00F77211 /* More */,
 				AAF3546D2791A1A00052EF08 /* Main */,
@@ -490,6 +542,7 @@
 			files = (
 				AAEA4D5C27913D31007DD383 /* LaunchScreen.storyboard in Resources */,
 				AA479C1E2796E52800F77211 /* MoreViewController.xib in Resources */,
+				AA155260279985B60053EB1A /* GoViewController.xib in Resources */,
 				AAEA4D5927913D31007DD383 /* Assets.xcassets in Resources */,
 				AAF354682791A0730052EF08 /* HomeViewController.xib in Resources */,
 				AA479C2E2796EA1D00F77211 /* NextViewController.xib in Resources */,
@@ -512,6 +565,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA15525F279985B60053EB1A /* GoViewController.swift in Sources */,
+				AA155266279987800053EB1A /* GoAssembly.swift in Sources */,
 				AAEA4D9C279152D0007DD383 /* MainAssembly.swift in Sources */,
 				AA479C2D2796EA1D00F77211 /* NextViewController.swift in Sources */,
 				AAEA4D8E27914A94007DD383 /* AssemblerManager.swift in Sources */,
@@ -529,6 +584,7 @@
 				AA479C242796E56B00F77211 /* MoreEntity.swift in Sources */,
 				AA683CA727957261001DD1F5 /* ViewModel.swift in Sources */,
 				AAC53ABA279833A70090C2ED /* NextAssembly.swift in Sources */,
+				AA155263279985FD0053EB1A /* GoViewModel.swift in Sources */,
 				AAF3546A2791A12E0052EF08 /* HomeAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +742,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DITest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -714,6 +771,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DITest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
